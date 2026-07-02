@@ -1,0 +1,638 @@
+{
+  "states": [
+    {
+      "id": "S0",
+      "name": "Assigned & Minor & Resolved"
+    },
+    {
+      "id": "S1",
+      "name": "Closed & Minor & Unassigned"
+    },
+    {
+      "id": "S2",
+      "name": "In Progress & Major & Unassigned"
+    },
+    {
+      "id": "S3",
+      "name": "Critical & Resolved & Unassigned"
+    },
+    {
+      "id": "S4",
+      "name": "Major & Resolved & Unassigned"
+    },
+    {
+      "id": "S5",
+      "name": "Assigned & Critical & Reopened"
+    },
+    {
+      "id": "S6",
+      "name": "Major & Patch Available & Unassigned"
+    },
+    {
+      "id": "S7",
+      "name": "Assigned & Major & Reopened"
+    },
+    {
+      "id": "S8",
+      "name": "Assigned & Critical & Open"
+    },
+    {
+      "id": "S9",
+      "name": "In Progress & Minor & Unassigned"
+    },
+    {
+      "id": "S10",
+      "name": "Assigned & Major & Open"
+    },
+    {
+      "id": "S11",
+      "name": "Minor & Resolved & Unassigned"
+    },
+    {
+      "id": "S12",
+      "name": "Assigned & Minor & Reopened"
+    },
+    {
+      "id": "S13",
+      "name": "Assigned & Critical & Patch Available"
+    },
+    {
+      "id": "S14",
+      "name": "Minor & Patch Available & Unassigned"
+    },
+    {
+      "id": "S15",
+      "name": "Assigned & Minor & Open"
+    },
+    {
+      "id": "S16",
+      "name": "Assigned & Major & Patch Available"
+    },
+    {
+      "id": "S17",
+      "name": "Assigned & Critical & In Progress"
+    },
+    {
+      "id": "S18",
+      "name": "Major & Reopened & Unassigned"
+    },
+    {
+      "id": "S19",
+      "name": "Critical & Open & Unassigned"
+    },
+    {
+      "id": "S20",
+      "name": "Assigned & Minor & Patch Available"
+    },
+    {
+      "id": "S21",
+      "name": "Minor & Reopened & Unassigned"
+    },
+    {
+      "id": "S22",
+      "name": "Assigned & Critical & Resolved"
+    },
+    {
+      "id": "S23",
+      "name": "Assigned & Closed & Critical"
+    },
+    {
+      "id": "S24",
+      "name": "Minor & Open & Unassigned"
+    },
+    {
+      "id": "S25",
+      "name": "Assigned & Major & Resolved"
+    },
+    {
+      "id": "S26",
+      "name": "Major & Open & Unassigned"
+    },
+    {
+      "id": "S27",
+      "name": "Assigned & In Progress & Major"
+    },
+    {
+      "id": "S28",
+      "name": "Assigned & Closed & Minor"
+    },
+    {
+      "id": "S29",
+      "name": "Assigned & In Progress & Minor"
+    },
+    {
+      "id": "S30",
+      "name": "Assigned & Closed & Major"
+    },
+    {
+      "id": "S31",
+      "name": "Closed & Major & Unassigned"
+    }
+  ],
+  "transitions": [
+    {
+      "from_id": "S10",
+      "from_name": "Assigned & Major & Open",
+      "to_id": "S16",
+      "to_name": "Assigned & Major & Patch Available",
+      "count": 67,
+      "probability": 0.1034
+    },
+    {
+      "from_id": "S10",
+      "from_name": "Assigned & Major & Open",
+      "to_id": "S25",
+      "to_name": "Assigned & Major & Resolved",
+      "count": 291,
+      "probability": 0.4491
+    },
+    {
+      "from_id": "S10",
+      "from_name": "Assigned & Major & Open",
+      "to_id": "S27",
+      "to_name": "Assigned & In Progress & Major",
+      "count": 290,
+      "probability": 0.4475
+    },
+    {
+      "from_id": "S16",
+      "from_name": "Assigned & Major & Patch Available",
+      "to_id": "S25",
+      "to_name": "Assigned & Major & Resolved",
+      "count": 117,
+      "probability": 0.9832
+    },
+    {
+      "from_id": "S16",
+      "from_name": "Assigned & Major & Patch Available",
+      "to_id": "S10",
+      "to_name": "Assigned & Major & Open",
+      "count": 1,
+      "probability": 0.0084
+    },
+    {
+      "from_id": "S16",
+      "from_name": "Assigned & Major & Patch Available",
+      "to_id": "S27",
+      "to_name": "Assigned & In Progress & Major",
+      "count": 1,
+      "probability": 0.0084
+    },
+    {
+      "from_id": "S15",
+      "from_name": "Assigned & Minor & Open",
+      "to_id": "S0",
+      "to_name": "Assigned & Minor & Resolved",
+      "count": 198,
+      "probability": 0.591
+    },
+    {
+      "from_id": "S15",
+      "from_name": "Assigned & Minor & Open",
+      "to_id": "S29",
+      "to_name": "Assigned & In Progress & Minor",
+      "count": 113,
+      "probability": 0.3373
+    },
+    {
+      "from_id": "S15",
+      "from_name": "Assigned & Minor & Open",
+      "to_id": "S20",
+      "to_name": "Assigned & Minor & Patch Available",
+      "count": 24,
+      "probability": 0.0716
+    },
+    {
+      "from_id": "S8",
+      "from_name": "Assigned & Critical & Open",
+      "to_id": "S13",
+      "to_name": "Assigned & Critical & Patch Available",
+      "count": 37,
+      "probability": 0.1574
+    },
+    {
+      "from_id": "S8",
+      "from_name": "Assigned & Critical & Open",
+      "to_id": "S22",
+      "to_name": "Assigned & Critical & Resolved",
+      "count": 98,
+      "probability": 0.417
+    },
+    {
+      "from_id": "S8",
+      "from_name": "Assigned & Critical & Open",
+      "to_id": "S17",
+      "to_name": "Assigned & Critical & In Progress",
+      "count": 100,
+      "probability": 0.4255
+    },
+    {
+      "from_id": "S13",
+      "from_name": "Assigned & Critical & Patch Available",
+      "to_id": "S22",
+      "to_name": "Assigned & Critical & Resolved",
+      "count": 80,
+      "probability": 0.8791
+    },
+    {
+      "from_id": "S13",
+      "from_name": "Assigned & Critical & Patch Available",
+      "to_id": "S17",
+      "to_name": "Assigned & Critical & In Progress",
+      "count": 7,
+      "probability": 0.0769
+    },
+    {
+      "from_id": "S13",
+      "from_name": "Assigned & Critical & Patch Available",
+      "to_id": "S8",
+      "to_name": "Assigned & Critical & Open",
+      "count": 4,
+      "probability": 0.044
+    },
+    {
+      "from_id": "S19",
+      "from_name": "Critical & Open & Unassigned",
+      "to_id": "S3",
+      "to_name": "Critical & Resolved & Unassigned",
+      "count": 14,
+      "probability": 1.0
+    },
+    {
+      "from_id": "S29",
+      "from_name": "Assigned & In Progress & Minor",
+      "to_id": "S20",
+      "to_name": "Assigned & Minor & Patch Available",
+      "count": 41,
+      "probability": 0.4059
+    },
+    {
+      "from_id": "S29",
+      "from_name": "Assigned & In Progress & Minor",
+      "to_id": "S0",
+      "to_name": "Assigned & Minor & Resolved",
+      "count": 58,
+      "probability": 0.5743
+    },
+    {
+      "from_id": "S29",
+      "from_name": "Assigned & In Progress & Minor",
+      "to_id": "S15",
+      "to_name": "Assigned & Minor & Open",
+      "count": 2,
+      "probability": 0.0198
+    },
+    {
+      "from_id": "S20",
+      "from_name": "Assigned & Minor & Patch Available",
+      "to_id": "S29",
+      "to_name": "Assigned & In Progress & Minor",
+      "count": 1,
+      "probability": 0.0175
+    },
+    {
+      "from_id": "S20",
+      "from_name": "Assigned & Minor & Patch Available",
+      "to_id": "S0",
+      "to_name": "Assigned & Minor & Resolved",
+      "count": 55,
+      "probability": 0.9649
+    },
+    {
+      "from_id": "S20",
+      "from_name": "Assigned & Minor & Patch Available",
+      "to_id": "S15",
+      "to_name": "Assigned & Minor & Open",
+      "count": 1,
+      "probability": 0.0175
+    },
+    {
+      "from_id": "S27",
+      "from_name": "Assigned & In Progress & Major",
+      "to_id": "S25",
+      "to_name": "Assigned & Major & Resolved",
+      "count": 163,
+      "probability": 0.6653
+    },
+    {
+      "from_id": "S27",
+      "from_name": "Assigned & In Progress & Major",
+      "to_id": "S16",
+      "to_name": "Assigned & Major & Patch Available",
+      "count": 76,
+      "probability": 0.3102
+    },
+    {
+      "from_id": "S27",
+      "from_name": "Assigned & In Progress & Major",
+      "to_id": "S10",
+      "to_name": "Assigned & Major & Open",
+      "count": 6,
+      "probability": 0.0245
+    },
+    {
+      "from_id": "S26",
+      "from_name": "Major & Open & Unassigned",
+      "to_id": "S4",
+      "to_name": "Major & Resolved & Unassigned",
+      "count": 46,
+      "probability": 0.8846
+    },
+    {
+      "from_id": "S26",
+      "from_name": "Major & Open & Unassigned",
+      "to_id": "S2",
+      "to_name": "In Progress & Major & Unassigned",
+      "count": 3,
+      "probability": 0.0577
+    },
+    {
+      "from_id": "S26",
+      "from_name": "Major & Open & Unassigned",
+      "to_id": "S6",
+      "to_name": "Major & Patch Available & Unassigned",
+      "count": 3,
+      "probability": 0.0577
+    },
+    {
+      "from_id": "S17",
+      "from_name": "Assigned & Critical & In Progress",
+      "to_id": "S8",
+      "to_name": "Assigned & Critical & Open",
+      "count": 23,
+      "probability": 0.219
+    },
+    {
+      "from_id": "S17",
+      "from_name": "Assigned & Critical & In Progress",
+      "to_id": "S13",
+      "to_name": "Assigned & Critical & Patch Available",
+      "count": 54,
+      "probability": 0.5143
+    },
+    {
+      "from_id": "S17",
+      "from_name": "Assigned & Critical & In Progress",
+      "to_id": "S22",
+      "to_name": "Assigned & Critical & Resolved",
+      "count": 28,
+      "probability": 0.2667
+    },
+    {
+      "from_id": "S24",
+      "from_name": "Minor & Open & Unassigned",
+      "to_id": "S9",
+      "to_name": "In Progress & Minor & Unassigned",
+      "count": 3,
+      "probability": 0.1579
+    },
+    {
+      "from_id": "S24",
+      "from_name": "Minor & Open & Unassigned",
+      "to_id": "S11",
+      "to_name": "Minor & Resolved & Unassigned",
+      "count": 12,
+      "probability": 0.6316
+    },
+    {
+      "from_id": "S24",
+      "from_name": "Minor & Open & Unassigned",
+      "to_id": "S14",
+      "to_name": "Minor & Patch Available & Unassigned",
+      "count": 4,
+      "probability": 0.2105
+    },
+    {
+      "from_id": "S9",
+      "from_name": "In Progress & Minor & Unassigned",
+      "to_id": "S24",
+      "to_name": "Minor & Open & Unassigned",
+      "count": 2,
+      "probability": 0.6667
+    },
+    {
+      "from_id": "S9",
+      "from_name": "In Progress & Minor & Unassigned",
+      "to_id": "S11",
+      "to_name": "Minor & Resolved & Unassigned",
+      "count": 1,
+      "probability": 0.3333
+    },
+    {
+      "from_id": "S25",
+      "from_name": "Assigned & Major & Resolved",
+      "to_id": "S30",
+      "to_name": "Assigned & Closed & Major",
+      "count": 9,
+      "probability": 0.36
+    },
+    {
+      "from_id": "S25",
+      "from_name": "Assigned & Major & Resolved",
+      "to_id": "S7",
+      "to_name": "Assigned & Major & Reopened",
+      "count": 16,
+      "probability": 0.64
+    },
+    {
+      "from_id": "S30",
+      "from_name": "Assigned & Closed & Major",
+      "to_id": "S25",
+      "to_name": "Assigned & Major & Resolved",
+      "count": 1,
+      "probability": 1.0
+    },
+    {
+      "from_id": "S4",
+      "from_name": "Major & Resolved & Unassigned",
+      "to_id": "S18",
+      "to_name": "Major & Reopened & Unassigned",
+      "count": 3,
+      "probability": 0.6
+    },
+    {
+      "from_id": "S4",
+      "from_name": "Major & Resolved & Unassigned",
+      "to_id": "S31",
+      "to_name": "Closed & Major & Unassigned",
+      "count": 2,
+      "probability": 0.4
+    },
+    {
+      "from_id": "S2",
+      "from_name": "In Progress & Major & Unassigned",
+      "to_id": "S26",
+      "to_name": "Major & Open & Unassigned",
+      "count": 2,
+      "probability": 0.6667
+    },
+    {
+      "from_id": "S2",
+      "from_name": "In Progress & Major & Unassigned",
+      "to_id": "S4",
+      "to_name": "Major & Resolved & Unassigned",
+      "count": 1,
+      "probability": 0.3333
+    },
+    {
+      "from_id": "S7",
+      "from_name": "Assigned & Major & Reopened",
+      "to_id": "S25",
+      "to_name": "Assigned & Major & Resolved",
+      "count": 9,
+      "probability": 0.6
+    },
+    {
+      "from_id": "S7",
+      "from_name": "Assigned & Major & Reopened",
+      "to_id": "S16",
+      "to_name": "Assigned & Major & Patch Available",
+      "count": 4,
+      "probability": 0.2667
+    },
+    {
+      "from_id": "S7",
+      "from_name": "Assigned & Major & Reopened",
+      "to_id": "S27",
+      "to_name": "Assigned & In Progress & Major",
+      "count": 1,
+      "probability": 0.0667
+    },
+    {
+      "from_id": "S7",
+      "from_name": "Assigned & Major & Reopened",
+      "to_id": "S7",
+      "to_name": "Assigned & Major & Reopened",
+      "count": 1,
+      "probability": 0.0667
+    },
+    {
+      "from_id": "S22",
+      "from_name": "Assigned & Critical & Resolved",
+      "to_id": "S5",
+      "to_name": "Assigned & Critical & Reopened",
+      "count": 11,
+      "probability": 0.6111
+    },
+    {
+      "from_id": "S22",
+      "from_name": "Assigned & Critical & Resolved",
+      "to_id": "S23",
+      "to_name": "Assigned & Closed & Critical",
+      "count": 7,
+      "probability": 0.3889
+    },
+    {
+      "from_id": "S5",
+      "from_name": "Assigned & Critical & Reopened",
+      "to_id": "S5",
+      "to_name": "Assigned & Critical & Reopened",
+      "count": 4,
+      "probability": 0.3077
+    },
+    {
+      "from_id": "S5",
+      "from_name": "Assigned & Critical & Reopened",
+      "to_id": "S17",
+      "to_name": "Assigned & Critical & In Progress",
+      "count": 3,
+      "probability": 0.2308
+    },
+    {
+      "from_id": "S5",
+      "from_name": "Assigned & Critical & Reopened",
+      "to_id": "S22",
+      "to_name": "Assigned & Critical & Resolved",
+      "count": 4,
+      "probability": 0.3077
+    },
+    {
+      "from_id": "S5",
+      "from_name": "Assigned & Critical & Reopened",
+      "to_id": "S13",
+      "to_name": "Assigned & Critical & Patch Available",
+      "count": 2,
+      "probability": 0.1538
+    },
+    {
+      "from_id": "S0",
+      "from_name": "Assigned & Minor & Resolved",
+      "to_id": "S12",
+      "to_name": "Assigned & Minor & Reopened",
+      "count": 5,
+      "probability": 0.5556
+    },
+    {
+      "from_id": "S0",
+      "from_name": "Assigned & Minor & Resolved",
+      "to_id": "S28",
+      "to_name": "Assigned & Closed & Minor",
+      "count": 4,
+      "probability": 0.4444
+    },
+    {
+      "from_id": "S12",
+      "from_name": "Assigned & Minor & Reopened",
+      "to_id": "S0",
+      "to_name": "Assigned & Minor & Resolved",
+      "count": 5,
+      "probability": 1.0
+    },
+    {
+      "from_id": "S11",
+      "from_name": "Minor & Resolved & Unassigned",
+      "to_id": "S21",
+      "to_name": "Minor & Reopened & Unassigned",
+      "count": 3,
+      "probability": 0.75
+    },
+    {
+      "from_id": "S11",
+      "from_name": "Minor & Resolved & Unassigned",
+      "to_id": "S1",
+      "to_name": "Closed & Minor & Unassigned",
+      "count": 1,
+      "probability": 0.25
+    },
+    {
+      "from_id": "S21",
+      "from_name": "Minor & Reopened & Unassigned",
+      "to_id": "S11",
+      "to_name": "Minor & Resolved & Unassigned",
+      "count": 1,
+      "probability": 1.0
+    },
+    {
+      "from_id": "S14",
+      "from_name": "Minor & Patch Available & Unassigned",
+      "to_id": "S11",
+      "to_name": "Minor & Resolved & Unassigned",
+      "count": 1,
+      "probability": 0.5
+    },
+    {
+      "from_id": "S14",
+      "from_name": "Minor & Patch Available & Unassigned",
+      "to_id": "S24",
+      "to_name": "Minor & Open & Unassigned",
+      "count": 1,
+      "probability": 0.5
+    },
+    {
+      "from_id": "S23",
+      "from_name": "Assigned & Closed & Critical",
+      "to_id": "S22",
+      "to_name": "Assigned & Critical & Resolved",
+      "count": 1,
+      "probability": 1.0
+    },
+    {
+      "from_id": "S28",
+      "from_name": "Assigned & Closed & Minor",
+      "to_id": "S0",
+      "to_name": "Assigned & Minor & Resolved",
+      "count": 1,
+      "probability": 1.0
+    }
+  ]
+}

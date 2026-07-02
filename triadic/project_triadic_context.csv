@@ -1,0 +1,56 @@
+Object,Attribute,Condition
+FLINK,Bug,Major
+FLINK,Bug,Open/Reopened
+FLINK,Improvement,Major
+FLINK,Improvement,Open/Reopened
+FLINK,New Feature,Major
+FLINK,New Feature,Open/Reopened
+FLINK,Sub-task,Major
+FLINK,Sub-task,Closed/Resolved
+HDDS,Bug,Major
+HDDS,Bug,Closed/Resolved
+HDDS,Improvement,Major
+HDDS,Improvement,Closed/Resolved
+HDDS,New Feature,Major
+HDDS,New Feature,Open/Reopened
+HDDS,Sub-task,Major
+HDDS,Sub-task,Closed/Resolved
+HDDS,Task,Major
+HDDS,Task,Closed/Resolved
+HDDS,Test,Major
+HDDS,Test,Closed/Resolved
+IGNITE,Bug,Major
+IGNITE,Bug,Closed/Resolved
+IGNITE,Improvement,Major
+IGNITE,Improvement,Closed/Resolved
+IGNITE,New Feature,Major
+IGNITE,New Feature,Open/Reopened
+IGNITE,Sub-task,Minor
+IGNITE,Sub-task,Closed/Resolved
+IGNITE,Task,Major
+IGNITE,Task,Closed/Resolved
+IGNITE,Test,Minor
+IGNITE,Test,Closed/Resolved
+KAFKA,Bug,Major
+KAFKA,Bug,Closed/Resolved
+KAFKA,Improvement,Minor
+KAFKA,Improvement,Closed/Resolved
+KAFKA,New Feature,Major
+KAFKA,New Feature,Open/Reopened
+KAFKA,Sub-task,Major
+KAFKA,Sub-task,Closed/Resolved
+KAFKA,Task,Major
+KAFKA,Task,Closed/Resolved
+KAFKA,Test,Closed/Resolved
+SPARK,Bug,Major
+SPARK,Bug,Closed/Resolved
+SPARK,Improvement,Major
+SPARK,Improvement,Closed/Resolved
+SPARK,New Feature,Major
+SPARK,New Feature,Closed/Resolved
+SPARK,Sub-task,Major
+SPARK,Sub-task,Closed/Resolved
+SPARK,Task,Major
+SPARK,Task,Closed/Resolved
+SPARK,Test,Major
+SPARK,Test,Closed/Resolved
